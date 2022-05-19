@@ -49,6 +49,8 @@ class Handler extends ExceptionHandler
 
         if ($execption instanceof EntityValidationException) 
             return $this->showError($execption->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
+        
+        return parent::render($request, $execption);
     }
 
     private function showError(string $message, int $statusCode)
