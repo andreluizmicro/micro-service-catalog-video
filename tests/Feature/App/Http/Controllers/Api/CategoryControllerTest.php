@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\App\HttpControllers\Api;
+namespace Tests\Feature\App\Http\Controllers\Api;
 
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Requests\{
