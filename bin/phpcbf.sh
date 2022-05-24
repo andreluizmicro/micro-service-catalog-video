@@ -1,0 +1,1 @@
+vendor/bin/phpcbf --stardard=psr12 index.php

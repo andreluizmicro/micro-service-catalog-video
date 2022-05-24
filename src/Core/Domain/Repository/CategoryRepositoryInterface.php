@@ -21,7 +21,15 @@ interface CategoryRepositoryInterface
     * @param string $order
     * @return Array
     */
-    public function findAll(string $filter = '', $order = 'DESC'): Array;
+    public function findAll(string $filter = '', $order = 'DESC'): array;
+
+    /**
+     * get List Categories find list Ids
+     *
+     * @param array $categoriesId
+     * @return array
+     */
+    public function getCategoriesIdsByListIds(array $categoriesId = []): array;
 
     /**
      * Find Category by Id
